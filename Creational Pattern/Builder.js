@@ -1,6 +1,5 @@
 class Profile {
 
-    /* Receives the builder and assigns the values */
     constructor(builder) {
         this.menulocation = builder.menuLocation;
         this.borders = builder.borders;
@@ -69,7 +68,7 @@ function main() {
 
 main();
 class ProfileDirector {
-    /* The director receives the builder */
+    
     constructor(builder) {
         this.builder = builder;
     }

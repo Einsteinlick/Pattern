@@ -14,7 +14,6 @@ class Profile {
 class ProfileBuilder {
     constructor(){ }
 
-    /* Define all the steps needed to create a profile */
 
     setMenu(position) {
         this.menuLocation = position;
@@ -51,7 +50,7 @@ class ProfileBuilder {
         return this;
     }
 
-    /* Could also be called getProfile() */
+  
     build() {
         return new Profile(this);
     }
@@ -75,16 +74,4 @@ class ProfileDirector {
         this.builder = builder;
     }
 
-    /* Implements a method to automatically generate a popular profile */
-    createPopularProfile() {
-        return this.builder
-            .setMenu('top')
-            .setBorders('soft')
-            .setTheme('light')
-            .setCoverImage('rain.jpg')
-            .setBackgroundColor('black')
-            .setMenuColor('blue')
-            .setProfileFont('Ubuntu')
-            .build();
-    }
 

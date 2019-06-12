@@ -12,6 +12,6 @@ class Singleton{
 }
 
 const instance1 = new Singleton, instance2 = new Singleton;
-console.log(instance1 === instance2); // true
-console.log(instance1 === Singleton.singleton); // true
-console.log(instance2 === Singleton.singleton); // tr
+console.log(instance1 === instance2);
+console.log(instance1 === Singleton.singleton); 
+console.log(instance2 === Singleton.singleton); 
